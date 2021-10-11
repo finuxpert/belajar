@@ -1,0 +1,24 @@
+cara install apache centos 8
+
+sudo dnf install httpd
+
+sudo firewall-cmd --permanent --add-service=https
+sudo firewall-cmd --permanent --zone=public --add-service=http
+sudo firewall-cmd --permanent --zone=public --add-service=https
+
+or
+
+firewall-cmd --add-service=http --permanent
+firewall-cmd --add-service=https --permanent
+
+-check
+firewall-cmd --reload
+firewall-cmd --list-services	
+
+-check
+sudo firewall-cmd --list-all | grep services
+
+sudo systemctl enable httpd
+sudo systemctl start httpd
+sudo systemctl status httpd
+hostname -I

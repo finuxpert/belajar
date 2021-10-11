@@ -1,0 +1,16 @@
+install check mk 
+
+
+
+wget https://mathias-kettner.de/support/1.5.0p7/check-mk-raw-1.5.0p7_0.bionic_amd64.deb
+
+
+dpkg -i dpkg -i check-mk-raw-*.deb
+
+apt-get install -f
+
+dpkg -i check-mk-raw-*.deb
+
+omd create apm
+
+sudo omd start apm 

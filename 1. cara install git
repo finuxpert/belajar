@@ -1,0 +1,5 @@
+install git 
+
+sudo dnf install git -y
+git config --global user.name "fikrirtc"
+git config --global user.email "fikrirtc12@gmail.com"

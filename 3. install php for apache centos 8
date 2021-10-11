@@ -1,0 +1,10 @@
+install php for apache centos 8
+
+
+dnf install php
+systemctl enable php-fpm
+systemctl start php-fpm
+systemctl status php-fpm	
+
+jangan lupa restart service http
+sudo systemctl restart httpd
